@@ -7,7 +7,7 @@ router.get("/notes", (req, res) => {
   res.json(JSON.parse(data));
 });
 
-//API post requests
+///API post requests
 router.post("/notes", (req, res) => {
   const notes = JSON.parse(fs.readFileSync("./db/db.json"));
   const addNote = req.body;
